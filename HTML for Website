@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Rating</title>
+    <style>
+        body { width: 400px; text-align: center; font-family: Arial, sans-serif; }
+        .news-table { display: none; margin: auto; border-collapse: collapse; width: 100%; }
+        .news-table th, .news-table td { border: 1px solid black; padding: 8px; }
+        .news-table th { background-color: grey; }
+    </style>
+</head>
+<body>
+    <h2>News Rating System</h2>
+
+    <table id="nbcTable" class="news-table">
+        <tr><th colspan="2">NBC News Ratings</th></tr>
+        <tr><td>Credibility</td><td></td></tr>
+        <tr><td>Reliability</td><td></td></tr>
+        <tr><td>Bias</td><td></td></tr>
+        <tr><td>Community Rating</td><td></td></tr>
+        <tr><td>Professional Rating</td><td></td></tr>
+        <tr><td>Overall Rating</td><td></td></tr>
+    </table>
+
+    <table id="foxTable" class="news-table">
+        <tr><th colspan="2">FOX News Ratings</th></tr>
+        <tr><td>Credibility</td><td></td></tr>
+        <tr><td>Reliability</td><td></td></tr>
+        <tr><td>Bias</td><td></td></tr>
+        <tr><td>Community Rating</td><td></td></tr>
+        <tr><td>Professional Rating</td><td></td></tr>
+        <tr><td>Overall Rating</td><td></td></tr>
+    </table>
+
+    <table id="cnnTable" class="news-table">
+        <tr><th colspan="2">CNN News Ratings</th></tr>
+        <tr><td>Credibility</td><td></td></tr>
+        <tr><td>Reliability</td><td></td></tr>
+        <tr><td>Bias</td><td></td></tr>
+        <tr><td>Community Rating</td><td></td></tr>
+        <tr><td>Professional Rating</td><td></td></tr>
+        <tr><td>Overall Rating</td><td></td></tr>
+    </table>
+
+    <table id="wsjTable" class="news-table">
+        <tr><th colspan="2">Wall Street Journal Ratings</th></tr>
+        <tr><td>Credibility</td><td></td></tr>
+        <tr><td>Reliability</td><td></td></tr>
+        <tr><td>Bias</td><td></td></tr>
+        <tr><td>Community Rating</td><td></td></tr>
+        <tr><td>Professional Rating</td><td></td></tr>
+        <tr><td>Overall Rating</td><td></td></tr>
+    </table>
+
+    <table id="nytTable" class="news-table">
+        <tr><th colspan="2">New York Times Ratings</th></tr>
+        <tr><td>Credibility</td><td></td></tr>
+        <tr><td>Reliability</td><td></td></tr>
+        <tr><td>Bias</td><td></td></tr>
+        <tr><td>Community Rating</td><td></td></tr>
+        <tr><td>Professional Rating</td><td></td></tr>
+        <tr><td>Overall Rating</td><td></td></tr>
+    </table>
+
+    <table id="cbsTable" class="news-table">
+        <tr><th colspan="2">CBS News Ratings</th></tr>
+        <tr><td>Credibility</td><td></td></tr>
+        <tr><td>Reliability</td><td></td></tr>
+        <tr><td>Bias</td><td></td></tr>
+        <tr><td>Community Rating</td><td></td></tr>
+        <tr><td>Professional Rating</td><td></td></tr>
+        <tr><td>Overall Rating</td><td></td></tr>
+    </table>
+
+    <script src="js/popup.js"></script>
+</body>
+</html>
