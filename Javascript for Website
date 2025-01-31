@@ -1,0 +1,27 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the current tab URL
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        let url = tabs[0].url;
+
+        // Hide all tables first
+        let tables = document.querySelectorAll(".news-table");
+        tables.forEach(table => table.style.display = "none");
+
+        // Match URL to a table
+        if (url.includes("nbcnews.com")) {
+            document.getElementById("nbcTable").style.display = "table";
+        } else if (url.includes("foxnews.com")) {
+            document.getElementById("foxTable").style.display = "table";
+        } else if (url.includes("cnn.com")) {
+            document.getElementById("cnnTable").style.display = "table";
+        } else if (url.includes("wsj.com")) {
+            document.getElementById("wsjTable").style.display = "table";
+        } else if (url.includes("nytimes.com")) {
+            document.getElementById("nytTable").style.display = "table";
+        } else if (url.includes("cbsnews.com")) {
+            document.getElementById("cbsTable").style.display = "table";
+        } else {
+            document.body.innerHTML += "<p>Not a supported news site.</p>";
+        }
+    });
+});
